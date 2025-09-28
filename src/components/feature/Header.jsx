@@ -19,8 +19,8 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <HeaderHelper link="/">Home</HeaderHelper>
             <HeaderHelper link="/about">About Us</HeaderHelper>
-            <HeaderHelper link="/">Academics</HeaderHelper>
-            <HeaderHelper link="/about">Student Life</HeaderHelper>
+            <HeaderHelper link="/academics">Academics</HeaderHelper>
+            <HeaderHelper link="/student-life">Student Life</HeaderHelper>
             <HeaderHelper link="/">News & Events</HeaderHelper>
             <HeaderHelper link="/about">Admissions</HeaderHelper>
             <HeaderHelper link="/">Contact Us</HeaderHelper>
