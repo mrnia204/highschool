@@ -1,5 +1,5 @@
 import React from "react";
-import Bgacademics from '../../assets/background.jpg';
+import Bgacademics from '../../assets/lbhs/campus-life-5.jpg';
 import TitleHead from "../../components/base/TitleHead";
 
 const AcademicHeroSection = () => {

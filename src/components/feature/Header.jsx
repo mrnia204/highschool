@@ -21,9 +21,9 @@ const Header = () => {
             <HeaderHelper link="/about">About Us</HeaderHelper>
             <HeaderHelper link="/academics">Academics</HeaderHelper>
             <HeaderHelper link="/student-life">Student Life</HeaderHelper>
-            <HeaderHelper link="/">News & Events</HeaderHelper>
-            <HeaderHelper link="/about">Admissions</HeaderHelper>
-            <HeaderHelper link="/">Contact Us</HeaderHelper>
+            <HeaderHelper link="/news-events">News & Events</HeaderHelper>
+            <HeaderHelper link="/admission">Admissions</HeaderHelper>
+            <HeaderHelper link="/contact">Contact Us</HeaderHelper>
           </div>
            <button className="lg:hidden p-2 cursor-pointer">
             <div className="w-6 h-6 items-center justify-center">

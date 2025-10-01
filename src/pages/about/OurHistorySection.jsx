@@ -1,8 +1,17 @@
 import React from "react";
 import OurHistoryHelper from "./OurHistoryHelper";
-import StudentsImg from '../../assets/students.jpg';
+import StudentsImg from '../../assets/lbhs/lbhs-history-1.jpg';
 
 const OurHistorySection = () => {
+  const historyList = [
+    { year: "2019", event: "School establishment with 150 students" },
+    { year: "2020", event: "First graduating class with 85% success rate" },
+    { year: "2021", event: "New double Classroom opened" },
+    { year: "2022", event: "Recognized as top-performing school in WHP" },
+    { year: "2023", event: "20% of graduates accepted to National High Schools" },
+    { year: "2024", event: " Students number inscreased to 500" },
+  ]
+
   return (
     <section className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
@@ -24,30 +33,14 @@ const OurHistorySection = () => {
             <div className="mt-8">
               <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-4">Key Milestones</h3>
               <div className="space-y-3">
-                <OurHistoryHelper 
-                  year="2019" 
-                  details="School establishment with 150 students" 
-                />
-                <OurHistoryHelper 
-                  year="2020" 
-                  details=" First graduating class with 85% success rate" 
-                />
-                <OurHistoryHelper 
-                  year="2021" 
-                  details="New double Classroom opened" 
-                />
-                <OurHistoryHelper 
-                  year="2022" 
-                  details="Recognized as top-performing school in WHP" 
-                />
-                 <OurHistoryHelper 
-                  year="2023" 
-                  details="98% of graduates accepted to National High Schools" 
-                />
-                 <OurHistoryHelper 
-                  year="2024" 
-                  details="Students number inscreased to 500" 
-                />
+
+                {historyList.map((items, i) => (
+                  <OurHistoryHelper 
+                    key={i}
+                    year={items.year} 
+                    details={items.event}
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -56,11 +49,6 @@ const OurHistorySection = () => {
               src={StudentsImg} 
               alt="Lumusa high School history"
               className="w-full max-h-lvh object-cover rounded-l-lg shadow-lg mb-2"
-            />
-             <img 
-              src={StudentsImg} 
-              alt="Lumusa high School history"
-              className="w-full max-h-lvh object-cover rounded-r-lg shadow-lg mb-2"
             />
           </div>
         </div>

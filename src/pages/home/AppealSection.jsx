@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import BackgroundImg from '../../assets/background.jpg';
+import BackgroundImg from '../../assets/lbhs/bg-img.jpg';
 import Button from "../../components/base/Button";
 
 

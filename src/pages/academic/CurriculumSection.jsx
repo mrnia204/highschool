@@ -2,6 +2,38 @@ import React from "react";
 import CurriculumHelper from "./CurriculumHelper";
 
 const CurriculumSection = () => {
+  const subjecs=[
+    {
+      grade: "Grade 9",
+      subjecs: [
+        "English Language",
+        "Mathematics",
+        "Science (Biology, Chemistry, Physics)",
+        "Social Science (History, Geography)",
+        "Personal Developement",
+        "Arts & Crafts",
+        "Physical Education",
+        "Religious Education"
+      ],
+    },
+    {
+      grade: "Grade 10",
+      subjecs: [
+        "English Language",
+        "Mathematics",
+        "Biology",
+        "Chemistry", 
+        "Physics",
+        "History",
+        "Geography",
+        "Personal Developement",
+        "Physical Education",
+        "Business Studies" 
+      ],
+    },
+  ];
+
+
   return (
     <section className="py-16 mask-b-to-gray-50">
       <div className="max-w-6xl mx-auto px-6">
@@ -13,34 +45,13 @@ const CurriculumSection = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <CurriculumHelper 
-            grade="Grade 09"
-            subjects= {[
-              "English Language",
-              "Mathematics",
-              "Science (Biology, Chemistry, Physics)",
-              "Social Science (History, Geography)",
-              "Personal Developement",
-              "Arts & Crafts",
-              "Physical Education",
-              "Religious Education"
-            ]}   
-          />
-          <CurriculumHelper 
-            grade="Grade 10"
-            subjects= {[
-              "English Language",
-              "Mathematics",
-              "Biology",
-              "Chemistry", 
-              "Physics",
-              "History",
-              "Geography",
-              "Personal Developement",
-              "Physical Education",
-              "Business Studies"    
-            ]}   
-          />
+          {subjecs.map((subject, index) => (
+            <CurriculumHelper 
+            key={index}
+              grade={subject.grade}
+              subjects={subject.subjecs}
+            />
+            ))}
         </div>
       </div>
     </section>

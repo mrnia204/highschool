@@ -1,7 +1,7 @@
 import React from "react";
 import TitleHead from "../../components/base/TitleHead";
 
-import BgImage from '../../assets/background.jpg';
+import BgImage from '../../assets/lbhs/school-env-1.jpg';
 
 const StudentLifeHeroSection = () => {
   return (
